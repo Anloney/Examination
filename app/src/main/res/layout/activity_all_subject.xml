@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_matchwhstyle"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <!-- 所有试题界面 -->
+    <include
+        android:id="@+id/test_title_lin"
+        layout="@layout/top_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/time_number_rela"
+        style="@style/common_whstyle"
+        android:layout_below="@+id/test_title_lin"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            style="@style/common_wrapstyle"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_text_style"
+                android:drawableLeft="@drawable/icon_selected_circle_img"
+                android:drawablePadding="7dp"
+                android:text="@string/have_selected" />
+
+            <TextView
+                style="@style/black_text_style"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/icon_unselected_circle_img"
+                android:drawablePadding="7dp"
+                android:text="@string/un_selected" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/test_time_text"
+            style="@style/common_wrapstyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/system"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/test_title_gridview"
+        style="@style/common_matchwhstyle"
+        android:layout_below="@+id/time_number_rela"
+        android:layout_marginBottom="83dp"
+        android:columnWidth="30dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="5"
+        android:padding="15dp"
+        android:scrollbars="none"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:id="@+id/test_hand_in_text"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_shape_bg"
+        android:gravity="center"
+        android:text="@string/hand_in_subject"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

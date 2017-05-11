@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_style"
+    android:orientation="vertical">
+
+    <!-- 登录界面 -->
+    <include layout="@layout/top_title_bar" />
+
+    <anloneytest.com.test.views.ReboundScrollView
+        style="@style/common_matchwhstyle"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/common_matchwhstyle"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:background="@drawable/icon_home_bg_img"-->
+            <!--android:scaleType="centerCrop" />-->
+
+            <LinearLayout
+                style="@style/common_whstyle"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/random_test_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_simulation_test"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/random_test"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/real_test_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_real_test"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/all_test"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </anloneytest.com.test.views.ReboundScrollView>
+</LinearLayout>

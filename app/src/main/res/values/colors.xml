@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="text_black">#554b4b</color>
+    <!--字体灰色-->
+    <color name="text_grey">#999999</color>  <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--字体黑色-->
+    <color name="system">#3BC1FB</color>
+    <!-- 所有页面的背景 -->
+    <color name="background_grey">#f7f4ef</color>
+    <!--背景灰色-->
+    <color name="light_grey">#AAAAAA</color>
+    <!--分割线色-->
+    <color name="divide_line_color">#E1E1E1</color>
+    <!-- 极浅灰色 -->
+    <color name="grey_simple">#EDEDED</color>
+    <!--用户注册和忘记密码字体颜色  浅蓝色-->
+    <color name="blue_btn_color">#3BC1FB</color>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+
+    <!-- 透明背景 -->
+    <color name="transparent_background">#9f000000</color>
+</resources>

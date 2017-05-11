@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_matchwhstyle"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <!-- 错题列表界面 -->
+    <include
+        android:id="@+id/test_title_lin"
+        layout="@layout/top_title_bar" />
+
+    <ListView
+        android:id="@+id/wrong_test_listview"
+        style="@style/common_whstyle"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/divide_line_color"
+        android:dividerHeight="0.6dp"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<anloneytest.com.test.views.MyListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mylistview"
+    style="@style/common_matchwhstyle"
+    android:cacheColorHint="#00000000"
+    android:divider="@color/divide_line_color"
+    android:dividerHeight="0.67dp"
+    android:listSelector="@android:color/transparent"
+    android:scrollbars="none" />

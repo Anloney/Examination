@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_whstyle"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!--错题列表题号对应的每一条布局-->
+    <TextView
+        android:id="@+id/adapter_number_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icon_unselected_circle_img"
+        android:gravity="center"
+        android:textColor="@color/blue_btn_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/adapter_status_text"
+        style="@style/black_text_style"
+        android:layout_width="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1.0" />
+
+    <ImageView
+        style="@style/common_wrapstyle"
+        android:src="@drawable/icon_next_img" />
+</LinearLayout>

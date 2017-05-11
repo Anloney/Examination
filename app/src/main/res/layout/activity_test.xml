@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_matchwhstyle"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <!-- 考试界面 -->
+    <include
+        android:id="@+id/test_title_lin"
+        layout="@layout/top_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/time_number_rela"
+        style="@style/common_whstyle"
+        android:layout_below="@+id/test_title_lin"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/test_number_text"
+            android:layout_width="120dp"
+            android:layout_height="43dp"
+            android:background="@drawable/icon_number_subject_img"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:text="第1题"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/test_subject_viewpager"
+        style="@style/common_matchwhstyle"
+        android:layout_below="@+id/time_number_rela"
+        android:layout_marginBottom="83dp" />
+
+    <LinearLayout
+        android:id="@+id/test_bottom_lin"
+        style="@style/common_whstyle"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/test_last_subject_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/icon_left_img"
+            android:drawablePadding="25dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/last_subject"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:id="@+id/test_next_subject_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.0"
+            android:drawablePadding="25dp"
+            android:drawableRight="@drawable/icon_right_img"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/mext_subject"
+            android:textColor="@color/text_black" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_view_notop"
+        android:layout_above="@+id/test_bottom_lin" />
+
+    <TextView
+        android:id="@+id/test_hand_in_text"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_shape_bg"
+        android:gravity="center"
+        android:text="@string/hand_in_subject"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

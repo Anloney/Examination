@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_matchwhstyle"
+    android:orientation="vertical">
+
+    <!-- 题目切换对应的每一条布局-->
+    <LinearLayout
+        style="@style/common_whstyle"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/adapter_test_title_text"
+            style="@style/black_text_style"
+            android:layout_width="match_parent" />
+
+        <ImageView
+            android:id="@+id/adapter_test_pic_img"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/adapter_select_listview"
+        style="@style/common_matchwhstyle"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>
